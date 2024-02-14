@@ -1,0 +1,173 @@
+.certificate-page {
+  width: 100%;
+  .certificate-section {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 50px 0;
+    .certificate-slider {
+      margin-top: 0.5rem;
+      .slider-img {
+        width: 100%;
+      }
+      .thumb-image {
+        width: 100px;
+        height: 70px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          object-position: center;
+        }
+      }
+      .certificate-slide,
+      .badge-slide,
+      .cert-thumb {
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      .certificate-slide,
+      .badge-slide {
+        width: 100%;
+        height: 100%;
+        @include respond(2xl) {
+          height: 500px;
+        }
+      }
+      .thumb-slider {
+        .swiper-slide {
+          width: 50px !important;
+          min-height: 50px;
+          &.swiper-slide-thumb-active {
+            .cert-thumb {
+              border: 2px solid #2780eb;
+            }
+          }
+          .cert-thumb {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .certificate-slider {
+      position: relative;
+      .download-certificate {
+        position: absolute;
+        right: 0;
+        bottom: 10px;
+        z-index: 1;
+      }
+    }
+    .student-details {
+      width: 100%;
+      @include respond(2xl) {
+        min-height: 500px;
+      }
+      .skill-tag {
+        background-color: #eee;
+        line-height: 1;
+        font-family: "Roboto", sans-serif;
+        padding: 5px 20px;
+        border-radius: 5px;
+        font-size: 13px;
+        letter-spacing: 0;
+      }
+    }
+    .social-share {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
+      height: 40px;
+      @include respond(md) {
+        justify-content: flex-end;
+      }
+      span {
+        img {
+          width: 30px;
+          height: 30px;
+          cursor: pointer;
+          @include respond(lg) {
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
+  .certificate-detail {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+}
+
+.verify-credentials-dialog {
+  .verified {
+    min-width: 30px;
+    min-height: 30px;
+    background-color: green;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+  }
+  .verify-loader {
+    font-size: 22px;
+    animation: rotate 4s linear 0s infinite;
+  }
+}
+.embed-share-dialog {
+  .MuiTab-root {
+    padding: 10px 25px;
+  }
+}
+
+.certificate-page,
+.verify-credentials-dialog,
+.embed-share-dialog,
+.email-share-dialog {
+  h3 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1;
+  }
+  h4 {
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  h5 {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  p {
+    color: #000000;
+    font-size: 13px;
+    line-height: 1.2;
+  }
+  p.sub-title {
+    color: #aaaaaa;
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

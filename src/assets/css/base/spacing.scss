@@ -1,0 +1,24 @@
+.root-padding {
+  padding-right: 20px;
+  padding-left: 20px;
+  @include respond(sm) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  @include respond(md) {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  @include respond(lg) {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+  @include respond(xl) {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+  @include respond(3xl) {
+    padding-right: 140px;
+    padding-left: 140px;
+  }
+}

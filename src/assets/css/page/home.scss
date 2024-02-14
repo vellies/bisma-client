@@ -1,0 +1,377 @@
+.bg-anim {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  max-width: 100%;
+  max-height: 100vh;
+  background: linear-gradient(45deg, #000, #090979 50%, #642269);
+}
+
+.section {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  @include respond(xl) {
+    min-height: calc(100vh - 96px);
+    margin-top: 0;
+  }
+}
+
+.fp-overflow {
+  width: 100%;
+}
+.fp-scrollable .fp-section,
+.fp-scrollable .fp-slide {
+  height: 100% !important;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: #e8eaf6 !important;
+}
+
+.bisma-slide {
+  width: 100%;
+  max-width: 1536px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 2.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  @include respond(2xl) {
+    gap: 5rem;
+  }
+  .brand {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5rem;
+    max-width: 500px;
+  }
+  .title {
+    color: #e8eaf6;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 900;
+    margin: 0;
+    @include respond(md) {
+      font-size: 60px;
+    }
+    @include respond(lg) {
+      font-size: 78px;
+    }
+    @include respond(2xl) {
+      font-size: 120px;
+    }
+  }
+}
+
+.bisma {
+  max-width: 1536px;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+
+  @include respond(lg) {
+    margin-top: 2.5rem;
+  }
+  @include respond(xl) {
+    flex-direction: row;
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+  @include respond(3xl) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  &__left {
+    width: 100%;
+    @include respond(xl) {
+      flex: 2;
+    }
+    p {
+      font-family: "Roboto", sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      color: #e8eaf6;
+      @include respond(lg) {
+        font-size: 28px;
+      }
+      @include respond(2xl) {
+        font-size: 32px;
+      }
+    }
+  }
+  &__right {
+    width: 100%;
+    @include respond(xl) {
+      flex: 1.5;
+    }
+    img {
+      max-width: 500px;
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+.slider-container {
+  width: 100%;
+  max-width: 1536px;
+  margin: 0 auto;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  @include respond(xl) {
+    padding-right: 5rem;
+    padding-left: 5rem;
+    margin-top: 11rem;
+  }
+  @include respond(3xl) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.bisma-feature {
+  width: 100%;
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  max-width: 500px;
+  height: 630px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  background-color: hsla(0, 0%, 100%, 0.15) !important;
+  box-sizing: border-box;
+  @include respond(lg) {
+    padding: 2.5rem;
+  }
+  @include respond(xl) {
+    height: 590px;
+  }
+  .feature-icon {
+    max-width: 120px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1.25rem;
+  }
+  .feature-title {
+    color: #e8eaf6;
+    margin-bottom: 2rem;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.1;
+    @include respond(xl) {
+      font-size: 28px;
+    }
+  }
+  ul {
+    list-style: none;
+    list-style-position: outside;
+    padding-inline-start: 0;
+    li {
+      color: #e8eaf6;
+      margin-bottom: 1rem;
+      font-family: "Roboto", sans-serif;
+      font-size: 18px;
+    }
+  }
+}
+
+.how-to-use {
+  width: 100%;
+  max-width: 1536px;
+  min-height: 100vh;
+  margin: 0 auto;
+  color: #e8eaf6;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  @include respond(lg) {
+    margin-top: 10rem;
+  }
+  @include respond(xl) {
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+  @include respond(3xl) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .title {
+    margin-bottom: 1.25rem;
+    font-size: 38px;
+    font-weight: 700;
+  }
+  p {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    margin-bottom: 1rem;
+    @include respond(lg) {
+      font-size: 28px;
+    }
+    @include respond(2xl) {
+      font-size: 32px;
+    }
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.features {
+  width: 100%;
+  max-width: 1400px;
+  min-height: calc(100vh - 96px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  gap: 2.5rem;
+  @include respond(xl) {
+    padding-right: 5rem;
+    padding-left: 5rem;
+    margin-top: 5rem;
+  }
+  @include respond(2xl) {
+    gap: 5rem;
+  }
+  @include respond(3xl) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  &__title {
+    text-align: center;
+    color: #e8eaf6;
+    font-size: 38px;
+    font-weight: 700;
+  }
+  &__list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 auto;
+    margin-bottom: 1.25rem;
+    @include respond(2xl) {
+      width: 91.666667%;
+    }
+    &--individual {
+      width: 100%;
+      max-width: 250px;
+      img {
+        width: 100%;
+        max-width: 120px;
+        display: block;
+        margin: 0 auto;
+      }
+      p {
+        text-align: center;
+        color: #e8eaf6;
+      }
+    }
+  }
+}
+
+.contactSlide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  @include respond(lg) {
+    margin-bottom: 0;
+  }
+  .contactContainer {
+    width: 100%;
+    max-width: 1536px;
+    font-family: "Roboto", sans-serif;
+    margin: 0 auto;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    @include respond(xl) {
+      padding-right: 5rem;
+      padding-left: 5rem;
+    }
+    @include respond(3xl) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    &__text {
+      color: #e8eaf6;
+      font-size: 24px;
+      font-weight: 400;
+      text-align: left;
+      margin-bottom: 1rem;
+      @include respond(lg) {
+        font-size: 28px;
+      }
+      @include respond(2xl) {
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+.contact-slide-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  opacity: 0.1;
+}
+.btn-blue-shade {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  padding: 0.5rem 3rem;
+  border-radius: 0.3rem;
+  color: #e8eaf6;
+  border: 0;
+  cursor: pointer;
+  transition: 0.5s;
+  background-image: linear-gradient(
+    40deg,
+    #28bcfd 20%,
+    #1d78ff 51%,
+    #28bcfd 90%
+  );
+  background-position: left center;
+  background-size: 200% auto;
+  box-shadow: 0 0 12px 0 #1f87ff;
+
+  @include respond(xl) {
+    font-size: 22px;
+  }
+  &:hover {
+    background-position: right center;
+  }
+}

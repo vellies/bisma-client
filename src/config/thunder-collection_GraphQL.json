@@ -1,0 +1,675 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Crypken API Documentation",
+    "dateExported": "2023-02-21T05:04:09.837Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "fab607f5-f056-4e27-bd97-e58d7a7a1930",
+            "colId": "13ecef9e-6c5d-46ad-a878-1c2b9f5d3fd5",
+            "containerId": "",
+            "name": "Login",
+            "url": "{{GLOBALSERVER}}",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-02-16T11:55:04.098Z",
+            "modified": "2023-02-17T06:13:36.298Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"variables\": {\r\n        \"input\": {\r\n            \"username\": \"manimani1@yopmail.com\",\r\n            \"password\": \"Admin@123\"\r\n        }\r\n    },\r\n    \"query\": \"query ($input: LoginRequest) {\\n  login(input: $input) {\\n    responseCode\\n    data\\n    __typename\\n  }\\n}\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "9a8b41c8-2355-4f1e-bdd9-6f571f40c016",
+            "colId": "13ecef9e-6c5d-46ad-a878-1c2b9f5d3fd5",
+            "containerId": "",
+            "name": "Update Profile",
+            "url": "{{GLOBALSERVER}}",
+            "method": "POST",
+            "sortNum": 15000,
+            "created": "2023-02-17T07:33:58.031Z",
+            "modified": "2023-02-17T07:35:05.703Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"variables\": {\r\n        \"input\": {\r\n            \"_id\": \"63ef1d27d09759f0d48d42f9\",\r\n            \"userType\": \"Organisation\",\r\n            \"organisationName\": \"XYZ\",\r\n            \"organisationType\": \"University\",\r\n            \"organisationSector\": \"Individual\",\r\n            \"regType\": \"Education industry\",\r\n            \"regNo\": \"ER4785\",\r\n            \"address\": \"Chennai\",\r\n            \"website\": \"xyz.com\",\r\n            \"firstName\": \"Arul\",\r\n            \"lastName\": \"S\",\r\n            \"mobile\": \"+91 74125-89632\",\r\n            \"designation\": \"Head Master\",\r\n            \"email\": \"abi@yopmail.com\"\r\n        }\r\n    },\r\n    \"query\": \"mutation ($input: UpdateProfileRequest) {\\n  updateProfile(input: $input) {\\n    responseCode\\n    data\\n    __typename\\n  }\\n}\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3af4c57c-718c-4641-8df3-48934730284e",
+            "colId": "13ecef9e-6c5d-46ad-a878-1c2b9f5d3fd5",
+            "containerId": "",
+            "name": "Reset Password",
+            "url": "{{GLOBALSERVER}}",
+            "method": "POST",
+            "sortNum": 17500,
+            "created": "2023-02-17T07:35:39.358Z",
+            "modified": "2023-02-17T07:35:39.358Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"variables\": {\r\n        \"input\": {\r\n            \"_id\": \"63ef1d27d09759f0d48d42f9\",\r\n            \"userType\": \"Organisation\",\r\n            \"organisationName\": \"XYZ\",\r\n            \"organisationType\": \"University\",\r\n            \"organisationSector\": \"Individual\",\r\n            \"regType\": \"Education industry\",\r\n            \"regNo\": \"ER4785\",\r\n            \"address\": \"Chennai\",\r\n            \"website\": \"xyz.com\",\r\n            \"firstName\": \"Arul\",\r\n            \"lastName\": \"S\",\r\n            \"mobile\": \"+91 74125-89632\",\r\n            \"designation\": \"Head Master\",\r\n            \"email\": \"abi@yopmail.com\"\r\n        }\r\n    },\r\n    \"query\": \"mutation ($input: UpdateProfileRequest) {\\n  updateProfile(input: $input) {\\n    responseCode\\n    data\\n    __typename\\n  }\\n}\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b0612c31-5b62-4ccb-8d98-dcb75de82d0c",
+            "colId": "13ecef9e-6c5d-46ad-a878-1c2b9f5d3fd5",
+            "containerId": "",
+            "name": "Signup Individual",
+            "url": "{{GLOBALSERVER}}",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-02-17T06:12:42.319Z",
+            "modified": "2023-02-17T06:12:54.005Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"variables\": {\n        \"input\": {\n            \"userType\": \"Individual\",\n            \"firstName\": \"mani\",\n            \"lastName\": \"s\",\n            \"email\": \"manimani1@yopmail.com\",\n            \"mobile\": \"+91 96325-88745\",\n            \"address\": \"Coimbatore\",\n            \"profession\": \"Admin\",\n            \"password\": \"Admin@123\",\n            \"confirmPassword\": \"Admin@123\"\n        }\n    },\n    \"query\": \"mutation ($input: SignupRequest) {\\n  signup(input: $input) {\\n    responseCode\\n    data\\n    __typename\\n  }\\n}\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e1bfd904-2b0e-445d-8e72-58b28ee5edf2",
+            "colId": "13ecef9e-6c5d-46ad-a878-1c2b9f5d3fd5",
+            "containerId": "",
+            "name": "Signup Organisation",
+            "url": "{{GLOBALSERVER}}",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-02-17T06:18:17.233Z",
+            "modified": "2023-02-17T06:22:31.268Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"variables\": {\n        \"input\": {\n            \"userType\": \"Organisation\",\n            \"organisationName\": \"XYZ\",\n            \"organisationType\": \"University\",\n            \"organisationSector\": \"Individual\",\n            \"regType\": \"Education industry\",\n            \"regNo\": \"ER4785\",\n            \"address\": \"Chennai\",\n            \"website\": \"xyz.com\",\n            \"firstName\": \"Arul\",\n            \"lastName\": \"S\",\n            \"mobile\": \"+91 74125-89632\",\n            \"designation\": \"Head Master\",\n            \"email\": \"abi@yopmail.com\",\n            \"password\": \"Admin@123\",\n            \"confirmPassword\": \"Admin@123\"\n        }\n    },\n    \"query\": \"mutation ($input: SignupRequest) {\\n  signup(input: $input) {\\n    responseCode\\n    data\\n    __typename\\n  }\\n}\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "89fb60ae-f5fe-4e81-9258-ec1dd877e8df",
+            "colId": "13ecef9e-6c5d-46ad-a878-1c2b9f5d3fd5",
+            "containerId": "",
+            "name": "Create Institute",
+            "url": "{{localhost}}",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-02-17T06:32:02.946Z",
+            "modified": "2023-02-17T06:32:10.290Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "{{Auth}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"variables\": {\n        \"input\": {\n            \"body\": {\n                \"instituteName\": \"RVS2 Institute\",\n                \"instituteCode\": \"003\",\n                \"location\": \"Chennai\",\n                \"status\": 1\n            }\n        }\n    },\n    \"query\": \"mutation ($input: CreateInstituteRequest) {\\n  createInstitute(input: $input) {\\n    responseCode\\n    data\\n    __typename\\n  }\\n}\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "aac8f077-f4d8-4d84-96e1-f12d2b700345",
+            "colId": "13ecef9e-6c5d-46ad-a878-1c2b9f5d3fd5",
+            "containerId": "",
+            "name": "Institute List",
+            "url": "{{localhost}}",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-02-17T06:35:38.277Z",
+            "modified": "2023-02-17T06:35:38.277Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "{{Auth}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"variables\": {\n        \"input\": {\n            \"paginate\": {\n                \"offset\": 0,\n                \"limit\": 10,\n                \"sort\": {\n                    \"key\": false,\n                    \"sortKey\": \"\",\n                    \"sortType\": true\n                },\n                \"search\": {\n                    \"key\": false,\n                    \"searchKey\": \"all\",\n                    \"searchValue\": \"\"\n                }\n            }\n        }\n    },\n    \"query\": \"query ($input: InstituteListRequest) {\\n  getInstituteList(input: $input) {\\n    responseCode\\n    data\\n    __typename\\n  }\\n}\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c436beaa-bd4b-4ff7-b7a3-6bc983eb34c9",
+            "colId": "13ecef9e-6c5d-46ad-a878-1c2b9f5d3fd5",
+            "containerId": "",
+            "name": "Institute List Search",
+            "url": "{{localhost}}",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-02-17T06:37:08.541Z",
+            "modified": "2023-02-17T06:37:18.171Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "{{Auth}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"variables\": {\r\n        \"input\": {\r\n            \"paginate\": {\r\n                \"offset\": 0,\r\n                \"limit\": 10,\r\n                \"sort\": {\r\n                    \"key\": false,\r\n                    \"sortKey\": \"\",\r\n                    \"sortType\": true\r\n                },\r\n                \"search\": {\r\n                    \"key\": true,\r\n                    \"searchKey\": \"instituteCode\",\r\n                    \"searchValue\": \"001\"\r\n                }\r\n            }\r\n        }\r\n    },\r\n    \"query\": \"query ($input: InstituteListRequest) {\\n  getInstituteList(input: $input) {\\n    responseCode\\n    data\\n    __typename\\n  }\\n}\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3e74048f-3892-42e7-95b0-1182ab5360eb",
+            "colId": "13ecef9e-6c5d-46ad-a878-1c2b9f5d3fd5",
+            "containerId": "",
+            "name": "Get Institute ById",
+            "url": "{{localhost}}",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-02-17T06:40:18.790Z",
+            "modified": "2023-02-17T06:40:24.911Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "{{Auth}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"variables\": {\n        \"input\": {\n            \"_id\": \"63ef1f2ca1c5974b1cefb570\"\n        }\n    },\n    \"query\": \"query ($input: GetInstituteByIdRequest) {\\n  getInstituteById(input: $input) {\\n    responseCode\\n    data\\n    __typename\\n  }\\n}\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c13c1a16-9327-4909-b0eb-5e126e0746d8",
+            "colId": "13ecef9e-6c5d-46ad-a878-1c2b9f5d3fd5",
+            "containerId": "",
+            "name": "Update Institute",
+            "url": "{{localhost}}",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-02-17T06:48:14.577Z",
+            "modified": "2023-02-17T06:48:38.271Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "{{Auth}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"variables\": {\r\n        \"input\": {\r\n            \"_id\": \"63ef1f6aa1c5974b1cefb5a7\",\r\n            \"body\": {\r\n                \"_id\": \"63ef1f6aa1c5974b1cefb5a7\",\r\n                \"instituteName\": \"RVS2 Institute\",\r\n                \"instituteCode\": \"003\",\r\n                \"location\": \"Chennai\",\r\n                \"createdBy\": \"63ef1d27d09759f0d48d42f9\",\r\n                \"status\": 1,\r\n                \"createdAt\": \"2023-02-17T06:32:10.287Z\",\r\n                \"updatedAt\": \"2023-02-17T06:32:10.287Z\",\r\n                \"__v\": 0\r\n            }\r\n        }\r\n    },\r\n    \"query\": \"mutation ($input: UpdateInstituteRequest) {\\n  updateInstitute(input: $input) {\\n    responseCode\\n    data\\n    __typename\\n  }\\n}\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "75e379b6-3108-4ba2-9b88-7ae9c4cc3eaa",
+            "colId": "13ecef9e-6c5d-46ad-a878-1c2b9f5d3fd5",
+            "containerId": "",
+            "name": "Create Program",
+            "url": "{{localhost}}",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2023-02-17T06:44:33.655Z",
+            "modified": "2023-02-17T06:45:59.839Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "{{Auth}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"variables\": {\r\n        \"input\": {\r\n            \"body\": {\r\n                \"instituteId\": \"63ef1f6aa1c5974b1cefb5a7\",\r\n                \"programName\": \"BCom\",\r\n                \"programCode\": \"BC001\",\r\n                \"duration\": \"Four Years\",\r\n                \"status\": 1\r\n            }\r\n        }\r\n    },\r\n    \"query\": \"mutation ($input: CreateProgramRequest) {\\n  createProgram(input: $input) {\\n    responseCode\\n    data\\n    __typename\\n  }\\n}\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a6338e13-6fc2-43e8-89ca-f58d1211ff57",
+            "colId": "13ecef9e-6c5d-46ad-a878-1c2b9f5d3fd5",
+            "containerId": "",
+            "name": "Program List",
+            "url": "{{localhost}}",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2023-02-17T06:40:55.006Z",
+            "modified": "2023-02-17T06:46:47.584Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "{{Auth}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"variables\": {\r\n        \"input\": {\r\n            \"paginate\": {\r\n                \"offset\": 0,\r\n                \"limit\": 10,\r\n                \"sort\": {\r\n                    \"key\": false,\r\n                    \"sortKey\": \"\",\r\n                    \"sortType\": true\r\n                },\r\n                \"search\": {\r\n                    \"key\": false,\r\n                    \"searchKey\": \"all\",\r\n                    \"searchValue\": \"\"\r\n                },\r\n                \"institute\": \"all\"\r\n            }\r\n        }\r\n    },\r\n    \"query\": \"query ($input: ProgramListRequest) {\\n  getProgramList(input: $input) {\\n    responseCode\\n    data\\n    __typename\\n  }\\n}\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f8e6bbe8-0fa0-4169-ad12-e0525e1eae0b",
+            "colId": "13ecef9e-6c5d-46ad-a878-1c2b9f5d3fd5",
+            "containerId": "",
+            "name": "Get Program ById",
+            "url": "{{localhost}}",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2023-02-17T06:49:15.713Z",
+            "modified": "2023-02-17T06:50:09.238Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "{{Auth}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"variables\": {\r\n        \"input\": {\r\n            \"_id\": \"63ef22a7a1c5974b1cefb60c\"\r\n        }\r\n    },\r\n    \"query\": \"query ($input: GetProgramByIdRequest) {\\n  getProgramById(input: $input) {\\n    responseCode\\n    data\\n    __typename\\n  }\\n}\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5600e29a-6cef-448c-8125-95be3b2012af",
+            "colId": "13ecef9e-6c5d-46ad-a878-1c2b9f5d3fd5",
+            "containerId": "",
+            "name": "Update Program",
+            "url": "{{localhost}}",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2023-02-17T06:49:19.265Z",
+            "modified": "2023-02-17T06:50:35.291Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "{{Auth}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"variables\": {\r\n        \"input\": {\r\n            \"_id\": \"63ef22a7a1c5974b1cefb60c\",\r\n            \"body\": {\r\n                \"_id\": \"63ef22a7a1c5974b1cefb60c\",\r\n                \"instituteId\": \"63ef1f6aa1c5974b1cefb5a7\",\r\n                \"programName\": \"BCom\",\r\n                \"programCode\": \"BC001\",\r\n                \"duration\": \"Four Years\",\r\n                \"createdBy\": \"63ef1d27d09759f0d48d42f9\",\r\n                \"status\": 1,\r\n                \"createdAt\": \"2023-02-17T06:45:59.836Z\",\r\n                \"updatedAt\": \"2023-02-17T06:45:59.836Z\",\r\n                \"__v\": 0\r\n            }\r\n        }\r\n    },\r\n    \"query\": \"mutation ($input: UpdateProgramRequest) {\\n  updateProgram(input: $input) {\\n    responseCode\\n    data\\n    __typename\\n  }\\n}\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5214506f-c058-4367-8cab-69c990503a43",
+            "colId": "13ecef9e-6c5d-46ad-a878-1c2b9f5d3fd5",
+            "containerId": "",
+            "name": "Create Course ",
+            "url": "{{localhost}}",
+            "method": "POST",
+            "sortNum": 130000,
+            "created": "2023-02-17T06:52:49.506Z",
+            "modified": "2023-02-17T07:19:00.365Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "{{Auth}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"variables\": {\r\n        \"input\": {\r\n            \"body\": {\r\n                \"instituteId\": \"63ef1f6aa1c5974b1cefb5a7\",\r\n                \"programId\": \"63ef2230a1c5974b1cefb602\",\r\n                \"courseName\": \"Electronics digital communication1\",\r\n                \"courseCode\": \"EEE002\",\r\n                \"startDate\": \"2023-02-17\",\r\n                \"endDate\": \"2023-02-17\",\r\n                \"certificateType\": \"Lifetime Certificate\",\r\n                \"certificateValidFrom\": \"2023-02-17\",\r\n                \"certificateValidTo\": \"2023-02-17\",\r\n                \"description\": \"lorium ipsum\",\r\n                \"gradeType\": \"Percentage\",\r\n                \"conditions\": \"\",\r\n                \"authorizedSignatories\": [\r\n                    {\r\n                        \"name\": \"Satish\",\r\n                        \"designation\": \"CEO\",\r\n                        \"authorizedId\": \"63ef2410a1c5974b1cefb638\",\r\n                        \"thumbFiles\": [],\r\n                        \"signAttachment\": [],\r\n                        \"signImageUrl\": \"https://crypken-bucket.s3.ap-southeast-1.amazonaws.com/development/signature/sign/251ded0a-64c9-4034-adbc-c40a06a7a31b\"\r\n                    }\r\n                ],\r\n                \"status\": 1,\r\n                \"numberOfDays\": 1,\r\n                \"gradeTypeValue\": \"100\"\r\n            }\r\n        }\r\n    },\r\n    \"query\": \"mutation ($input: CreateCourseRequest) {\\n  createCourse(input: $input) {\\n    responseCode\\n    data\\n    __typename\\n  }\\n}\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "fe838805-2b27-4498-a7e1-b0d8ddf09af6",
+            "colId": "13ecef9e-6c5d-46ad-a878-1c2b9f5d3fd5",
+            "containerId": "",
+            "name": "Course List",
+            "url": "{{localhost}}",
+            "method": "POST",
+            "sortNum": 140000,
+            "created": "2023-02-17T07:19:10.813Z",
+            "modified": "2023-02-17T07:19:38.477Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "{{Auth}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"variables\": {\r\n        \"input\": {\r\n            \"paginate\": {\r\n                \"offset\": 0,\r\n                \"limit\": 10,\r\n                \"sort\": {\r\n                    \"key\": false,\r\n                    \"sortKey\": \"\",\r\n                    \"sortType\": true\r\n                },\r\n                \"search\": {\r\n                    \"key\": false,\r\n                    \"searchKey\": \"all\",\r\n                    \"searchValue\": \"\"\r\n                },\r\n                \"institute\": \"all\"\r\n            }\r\n        }\r\n    },\r\n    \"query\": \"query ($input: CourseListRequest) {\\n  getCourseList(input: $input) {\\n    responseCode\\n    data\\n    __typename\\n  }\\n}\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ab9940f4-e18a-4611-bea1-b4ec87403253",
+            "colId": "13ecef9e-6c5d-46ad-a878-1c2b9f5d3fd5",
+            "containerId": "",
+            "name": "Get Course ById",
+            "url": "{{localhost}}",
+            "method": "POST",
+            "sortNum": 150000,
+            "created": "2023-02-17T07:19:57.406Z",
+            "modified": "2023-02-17T07:20:56.580Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "{{Auth}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"variables\": {\r\n        \"input\": {\r\n            \"_id\": \"63ef2a35a1c5974b1cefb64e\"\r\n        }\r\n    },\r\n    \"query\": \"query ($input: GetCourseByIdRequest) {\\n  getCourseById(input: $input) {\\n    responseCode\\n    data\\n    __typename\\n  }\\n}\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "34fe688b-5084-4474-b236-01f539dc09d4",
+            "colId": "13ecef9e-6c5d-46ad-a878-1c2b9f5d3fd5",
+            "containerId": "",
+            "name": "Update Course",
+            "url": "{{localhost}}",
+            "method": "POST",
+            "sortNum": 160000,
+            "created": "2023-02-17T07:19:59.886Z",
+            "modified": "2023-02-17T07:20:54.154Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "{{Auth}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"variables\": {\r\n        \"input\": {\r\n            \"_id\": \"63ef2a35a1c5974b1cefb64e\",\r\n            \"body\": {\r\n                \"_id\": \"63ef2a35a1c5974b1cefb64e\",\r\n                \"programId\": \"63ef2230a1c5974b1cefb602\",\r\n                \"instituteId\": \"63ef1f6aa1c5974b1cefb5a7\",\r\n                \"courseName\": \"Electronics digital communication\",\r\n                \"courseCode\": \"EEE001\",\r\n                \"startDate\": \"2023-02-17\",\r\n                \"endDate\": \"2023-02-17\",\r\n                \"numberOfDays\": 1,\r\n                \"certificateType\": \"Lifetime Certificate\",\r\n                \"certificateValidFrom\": \"2023-02-17T00:00:00.000Z\",\r\n                \"certificateValidTo\": \"2023-02-17T00:00:00.000Z\",\r\n                \"description\": \"lorium ipsum\",\r\n                \"gradeType\": \"Percentage\",\r\n                \"gradeTypeValue\": \"100\",\r\n                \"authorizedSignatories\": [\r\n                    {\r\n                        \"name\": \"Satish\",\r\n                        \"designation\": \"CEO\",\r\n                        \"authorizedId\": \"63ef2410a1c5974b1cefb638\",\r\n                        \"thumbFiles\": [],\r\n                        \"signAttachment\": [],\r\n                        \"signImageUrl\": \"https://crypken-bucket.s3.ap-southeast-1.amazonaws.com/development/signature/sign/251ded0a-64c9-4034-adbc-c40a06a7a31b\"\r\n                    }\r\n                ],\r\n                \"createdBy\": \"63ef1d27d09759f0d48d42f9\",\r\n                \"status\": 1,\r\n                \"createdAt\": \"2023-02-17T07:18:13.451Z\",\r\n                \"updatedAt\": \"2023-02-17T07:18:13.451Z\",\r\n                \"__v\": 0,\r\n                \"program\": [\r\n                    {\r\n                        \"_id\": \"63ef2230a1c5974b1cefb602\",\r\n                        \"instituteId\": \"63ef1f6aa1c5974b1cefb5a7\",\r\n                        \"programName\": \"BE\",\r\n                        \"programCode\": \"BE001\",\r\n                        \"duration\": \"Four Years\",\r\n                        \"createdBy\": \"63ef1d27d09759f0d48d42f9\",\r\n                        \"status\": 1,\r\n                        \"createdAt\": \"2023-02-17T06:44:00.918Z\",\r\n                        \"updatedAt\": \"2023-02-17T06:44:00.918Z\",\r\n                        \"__v\": 0\r\n                    }\r\n                ]\r\n            }\r\n        }\r\n    },\r\n    \"query\": \"mutation ($input: UpdateCourseRequest) {\\n  updateCourse(input: $input) {\\n    responseCode\\n    data\\n    __typename\\n  }\\n}\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b4bd13ad-cc1c-4955-a45e-ca7b71681cf4",
+            "colId": "13ecef9e-6c5d-46ad-a878-1c2b9f5d3fd5",
+            "containerId": "",
+            "name": "Create Certificate Single",
+            "url": "{{localhost}}",
+            "method": "POST",
+            "sortNum": 170000,
+            "created": "2023-02-17T07:22:19.238Z",
+            "modified": "2023-02-17T07:23:26.412Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "{{Auth}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"variables\": {\r\n        \"input\": {\r\n            \"body\": {\r\n                \"firstName\": \"\",\r\n                \"lastName\": \"\",\r\n                \"email\": \"\",\r\n                \"mobile\": \"\",\r\n                \"enrollmentNo\": \"\",\r\n                \"skillTags\": [\r\n                    \"php\",\r\n                    \"nodejs\",\r\n                    \"reactjs\"\r\n                ],\r\n                \"type\": \"add\",\r\n                \"courseId\": \"63ef2a64a1c5974b1cefb658\",\r\n                \"certificateType\": \"education\",\r\n                \"certificatesList\": [\r\n                    {\r\n                        \"firstName\": \"abc\",\r\n                        \"lastName\": \"s\",\r\n                        \"email\": \"cde@yopmail.com\",\r\n                        \"mobile\": \"+91 96325-87411\",\r\n                        \"enrollmentNo\": \"ERT5678\",\r\n                        \"skillTags\": [\r\n                            \"php\",\r\n                            \"nodejs\",\r\n                            \"reactjs\"\r\n                        ],\r\n                        \"otherDetails\": {\r\n                            \"enrollmentNo\": \"ERT5678\"\r\n                        },\r\n                        \"type\": \"add\"\r\n                    }\r\n                ]\r\n            }\r\n        }\r\n    },\r\n    \"query\": \"mutation ($input: CreateCertificateRequest) {\\n  createCertificate(input: $input) {\\n    responseCode\\n    data\\n    __typename\\n  }\\n}\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a7e63987-5c8a-477a-b5b7-eba0232ee2d6",
+            "colId": "13ecef9e-6c5d-46ad-a878-1c2b9f5d3fd5",
+            "containerId": "",
+            "name": "Create Certificate Multiple",
+            "url": "{{localhost}}",
+            "method": "POST",
+            "sortNum": 175000,
+            "created": "2023-02-17T07:27:13.030Z",
+            "modified": "2023-02-17T07:28:16.868Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "{{Auth}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"variables\": {\r\n        \"input\": {\r\n            \"body\": {\r\n                \"courseId\": \"63ef2a64a1c5974b1cefb658\",\r\n                \"firstName\": \"\",\r\n                \"lastName\": \"\",\r\n                \"email\": \"\",\r\n                \"mobile\": \"\",\r\n                \"enrollmentNo\": \"\",\r\n                \"otherDetails\": {\r\n                    \"enrollmentNo\": \"\"\r\n                },\r\n                \"type\": \"add\",\r\n                \"certificateIndividualList\": [],\r\n                \"skillTags\": [\r\n                    \"nodejs\",\r\n                    \"php\"\r\n                ],\r\n                \"certificateType\": \"education\",\r\n                \"certificatesList\": [\r\n                    {\r\n                        \"email\": \"vellies11@yopmail.com\",\r\n                        \"firstName\": \"Vellies1\",\r\n                        \"lastName\": \"R\",\r\n                        \"mobile\": \"+91 9751847178\",\r\n                        \"otherDetails\": {\r\n                            \"enrollmentNo\": \"CSE8965\"\r\n                        }\r\n                    },\r\n                    {\r\n                        \"email\": \"vellies21@yopmail.com\",\r\n                        \"firstName\": \"Vellies2\",\r\n                        \"lastName\": \"R\",\r\n                        \"mobile\": \"+91 9751847178\",\r\n                        \"otherDetails\": {\r\n                            \"enrollmentNo\": \"CSE8965\"\r\n                        }\r\n                    },\r\n                    {\r\n                        \"email\": \"vellies31@yopmail.com\",\r\n                        \"firstName\": \"Vellies3\",\r\n                        \"lastName\": \"R\",\r\n                        \"mobile\": \"+91 9751847178\",\r\n                        \"otherDetails\": {\r\n                            \"enrollmentNo\": \"CSE8966\"\r\n                        }\r\n                    },\r\n                    {\r\n                        \"email\": \"vellies41@yopmail.com\",\r\n                        \"firstName\": \"Vellies4\",\r\n                        \"lastName\": \"R\",\r\n                        \"mobile\": \"+91 9751847178\",\r\n                        \"otherDetails\": {\r\n                            \"enrollmentNo\": \"CSE8967\"\r\n                        }\r\n                    },\r\n                    {\r\n                        \"email\": \"vellies51@yopmail.com\",\r\n                        \"firstName\": \"Vellies5\",\r\n                        \"lastName\": \"R\",\r\n                        \"mobile\": \"+91 9751847178\",\r\n                        \"otherDetails\": {\r\n                            \"enrollmentNo\": \"CSE8968\"\r\n                        }\r\n                    }\r\n                ]\r\n            }\r\n        }\r\n    },\r\n    \"query\": \"mutation ($input: CreateCertificateRequest) {\\n  createCertificate(input: $input) {\\n    responseCode\\n    data\\n    __typename\\n  }\\n}\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3d79b67c-19ae-403d-a938-8540bc541398",
+            "colId": "13ecef9e-6c5d-46ad-a878-1c2b9f5d3fd5",
+            "containerId": "",
+            "name": "Certificate List",
+            "url": "{{localhost}}",
+            "method": "POST",
+            "sortNum": 180000,
+            "created": "2023-02-17T07:23:38.726Z",
+            "modified": "2023-02-17T07:25:38.677Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "{{Auth}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"variables\": {\r\n        \"input\": {\r\n            \"paginate\": {\r\n                \"offset\": 0,\r\n                \"limit\": 10,\r\n                \"sort\": {\r\n                    \"key\": false,\r\n                    \"sortKey\": \"\",\r\n                    \"sortType\": true\r\n                },\r\n                \"search\": {\r\n                    \"key\": false,\r\n                    \"searchKey\": \"all\",\r\n                    \"searchValue\": \"\"\r\n                },\r\n                \"certificateType\": \"education\",\r\n                \"listStatus\": 0\r\n            }\r\n        }\r\n    },\r\n    \"query\": \"query ($input: CertificateListMintBasedRequest) {\\n  getCertificateListMintBased(input: $input) {\\n    responseCode\\n    data\\n    __typename\\n  }\\n}\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "8538350f-77dc-489c-9283-4f9026a32ada",
+            "colId": "13ecef9e-6c5d-46ad-a878-1c2b9f5d3fd5",
+            "containerId": "",
+            "name": "Get Certificate ById",
+            "url": "{{localhost}}",
+            "method": "POST",
+            "sortNum": 185000,
+            "created": "2023-02-17T07:30:40.702Z",
+            "modified": "2023-02-17T07:31:08.640Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "{{Auth}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"variables\": {\r\n        \"input\": {\r\n            \"_id\": \"63ef2c90a1c5974b1cefb6fb\"\r\n        }\r\n    },\r\n    \"query\": \"query ($input: GetCertificateByIdRequest) {\\n  getCertificateById(input: $input) {\\n    responseCode\\n    data\\n    __typename\\n  }\\n}\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "039923bc-b94d-4780-aa81-ca6517b16451",
+            "colId": "13ecef9e-6c5d-46ad-a878-1c2b9f5d3fd5",
+            "containerId": "",
+            "name": "View Certificate ById",
+            "url": "{{localhost}}",
+            "method": "POST",
+            "sortNum": 190000,
+            "created": "2023-02-17T07:28:56.198Z",
+            "modified": "2023-02-21T05:03:22.972Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"variables\": {\n        \"input\": {\n            \"u_id\": \"1231171258144654\"\n        }\n    },\n    \"query\": \"query ($input: ViewCertificateByIdRequest) {\\n  viewCertificateById(input: $input) {\\n    responseCode\\n    data\\n    __typename\\n  }\\n}\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "8c9cf983-b1a2-4c47-9880-c125aafd979b",
+            "colId": "13ecef9e-6c5d-46ad-a878-1c2b9f5d3fd5",
+            "containerId": "",
+            "name": "Update Certificate",
+            "url": "{{localhost}}",
+            "method": "POST",
+            "sortNum": 200000,
+            "created": "2023-02-17T07:28:58.870Z",
+            "modified": "2023-02-17T07:29:05.584Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "{{Auth}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"variables\": {\r\n        \"input\": {\r\n            \"_id\": \"63ef2a35a1c5974b1cefb64e\",\r\n            \"body\": {\r\n                \"_id\": \"63ef2a35a1c5974b1cefb64e\",\r\n                \"programId\": \"63ef2230a1c5974b1cefb602\",\r\n                \"instituteId\": \"63ef1f6aa1c5974b1cefb5a7\",\r\n                \"courseName\": \"Electronics digital communication\",\r\n                \"courseCode\": \"EEE001\",\r\n                \"startDate\": \"2023-02-17\",\r\n                \"endDate\": \"2023-02-17\",\r\n                \"numberOfDays\": 1,\r\n                \"certificateType\": \"Lifetime Certificate\",\r\n                \"certificateValidFrom\": \"2023-02-17T00:00:00.000Z\",\r\n                \"certificateValidTo\": \"2023-02-17T00:00:00.000Z\",\r\n                \"description\": \"lorium ipsum\",\r\n                \"gradeType\": \"Percentage\",\r\n                \"gradeTypeValue\": \"100\",\r\n                \"authorizedSignatories\": [\r\n                    {\r\n                        \"name\": \"Satish\",\r\n                        \"designation\": \"CEO\",\r\n                        \"authorizedId\": \"63ef2410a1c5974b1cefb638\",\r\n                        \"thumbFiles\": [],\r\n                        \"signAttachment\": [],\r\n                        \"signImageUrl\": \"https://crypken-bucket.s3.ap-southeast-1.amazonaws.com/development/signature/sign/251ded0a-64c9-4034-adbc-c40a06a7a31b\"\r\n                    }\r\n                ],\r\n                \"createdBy\": \"63ef1d27d09759f0d48d42f9\",\r\n                \"status\": 1,\r\n                \"createdAt\": \"2023-02-17T07:18:13.451Z\",\r\n                \"updatedAt\": \"2023-02-17T07:18:13.451Z\",\r\n                \"__v\": 0,\r\n                \"program\": [\r\n                    {\r\n                        \"_id\": \"63ef2230a1c5974b1cefb602\",\r\n                        \"instituteId\": \"63ef1f6aa1c5974b1cefb5a7\",\r\n                        \"programName\": \"BE\",\r\n                        \"programCode\": \"BE001\",\r\n                        \"duration\": \"Four Years\",\r\n                        \"createdBy\": \"63ef1d27d09759f0d48d42f9\",\r\n                        \"status\": 1,\r\n                        \"createdAt\": \"2023-02-17T06:44:00.918Z\",\r\n                        \"updatedAt\": \"2023-02-17T06:44:00.918Z\",\r\n                        \"__v\": 0\r\n                    }\r\n                ]\r\n            }\r\n        }\r\n    },\r\n    \"query\": \"mutation ($input: UpdateCourseRequest) {\\n  updateCourse(input: $input) {\\n    responseCode\\n    data\\n    __typename\\n  }\\n}\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "240c9099-40c6-474a-b65e-b7a115a9c5dc",
+            "colId": "13ecef9e-6c5d-46ad-a878-1c2b9f5d3fd5",
+            "containerId": "",
+            "name": "MyCertificate List",
+            "url": "{{localhost}}",
+            "method": "POST",
+            "sortNum": 210000,
+            "created": "2023-02-17T07:32:27.382Z",
+            "modified": "2023-02-17T07:32:45.678Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "{{Auth}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"variables\": {\r\n        \"input\": {\r\n            \"paginate\": {\r\n                \"offset\": 0,\r\n                \"limit\": 10,\r\n                \"sort\": {\r\n                    \"key\": false,\r\n                    \"sortKey\": \"\",\r\n                    \"sortType\": true\r\n                },\r\n                \"search\": {\r\n                    \"key\": false,\r\n                    \"searchKey\": \"all\",\r\n                    \"searchValue\": \"\"\r\n                },\r\n                \"certificateType\": \"education\"\r\n            }\r\n        }\r\n    },\r\n    \"query\": \"query ($input: MyCertificateListRequest) {\\n  getMyCertificateList(input: $input) {\\n    responseCode\\n    data\\n    __typename\\n  }\\n}\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "76240ac9-8dfa-4e6e-8aa7-e331195893b8",
+            "colId": "13ecef9e-6c5d-46ad-a878-1c2b9f5d3fd5",
+            "containerId": "",
+            "name": "get Counts",
+            "url": "{{localhost}}",
+            "method": "POST",
+            "sortNum": 220000,
+            "created": "2023-02-17T07:37:11.054Z",
+            "modified": "2023-02-17T07:37:28.038Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "{{Auth}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"variables\": {\r\n        \"input\": {\r\n            \"body\": {\r\n                \"certificateType\": \"education\"\r\n            }\r\n        }\r\n    },\r\n    \"query\": \"mutation ($input: getCountsRequest) {\\n  getCounts(input: $input) {\\n    responseCode\\n    data\\n    __typename\\n  }\\n}\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5ff03363-6f34-4684-a5fc-f661faea734c",
+            "colId": "13ecef9e-6c5d-46ad-a878-1c2b9f5d3fd5",
+            "containerId": "",
+            "name": "get Blockchain Balance",
+            "url": "{{localhost}}",
+            "method": "POST",
+            "sortNum": 230000,
+            "created": "2023-02-17T07:37:46.790Z",
+            "modified": "2023-02-17T07:38:04.017Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "{{Auth}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"variables\": {\r\n        \"input\": {\r\n            \"body\": {\r\n                \"certificateType\": \"education\"\r\n            }\r\n        }\r\n    },\r\n    \"query\": \"mutation ($input: getBlockchainBalanceRequest) {\\n  getBlockchainBalance(input: $input) {\\n    responseCode\\n    data\\n    __typename\\n  }\\n}\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "df4e08d1-d3d4-48be-89d2-da7c40981a3b",
+            "colId": "13ecef9e-6c5d-46ad-a878-1c2b9f5d3fd5",
+            "containerId": "",
+            "name": "get User List",
+            "url": "{{localhost}}",
+            "method": "POST",
+            "sortNum": 240000,
+            "created": "2023-02-17T07:38:28.494Z",
+            "modified": "2023-02-17T07:38:51.721Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "{{Auth}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"variables\": {\r\n        \"input\": {\r\n            \"paginate\": {\r\n                \"offset\": 0,\r\n                \"limit\": 10,\r\n                \"sort\": {\r\n                    \"key\": false,\r\n                    \"sortKey\": \"\",\r\n                    \"sortType\": true\r\n                },\r\n                \"search\": {\r\n                    \"key\": false,\r\n                    \"searchKey\": \"\",\r\n                    \"searchValue\": \"\"\r\n                }\r\n            }\r\n        }\r\n    },\r\n    \"query\": \"query ($input: getUserListRequest) {\\n  getUserList(input: $input) {\\n    responseCode\\n    data\\n    __typename\\n  }\\n}\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c21aea72-8a56-4fb3-a0a9-b9724b3a589a",
+            "colId": "13ecef9e-6c5d-46ad-a878-1c2b9f5d3fd5",
+            "containerId": "",
+            "name": "Transaction List",
+            "url": "{{localhost}}",
+            "method": "POST",
+            "sortNum": 250000,
+            "created": "2023-02-17T07:39:08.150Z",
+            "modified": "2023-02-17T07:39:22.985Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "{{Auth}}"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"variables\": {\r\n        \"input\": {\r\n            \"paginate\": {\r\n                \"offset\": 0,\r\n                \"limit\": 10,\r\n                \"sort\": {\r\n                    \"key\": false,\r\n                    \"sortKey\": \"\",\r\n                    \"sortType\": true\r\n                },\r\n                \"search\": {\r\n                    \"key\": false,\r\n                    \"searchKey\": \"\",\r\n                    \"searchValue\": \"\"\r\n                },\r\n                \"certificateType\": \"education\"\r\n            }\r\n        }\r\n    },\r\n    \"query\": \"query ($input: TransactionListRequest) {\\n  getTransactionList(input: $input) {\\n    responseCode\\n    data\\n    __typename\\n  }\\n}\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

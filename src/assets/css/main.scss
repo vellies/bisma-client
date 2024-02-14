@@ -1,0 +1,23 @@
+// abstracts
+@import "./abstracts/mixin.scss";
+
+// base
+@import "./base/fonts.scss";
+@import "./base/colors.scss";
+@import "./base/spacing.scss";
+@import "./base/typography.scss";
+
+// helper
+@import "./helper.scss";
+
+// components
+@import "./components/certificate.scss";
+@import "./components/table.scss";
+@import "./components/homeNav.scss";
+@import "./components/form.scss";
+@import "./components/homeFooter.scss";
+
+// pages
+@import "./page/certificatePage.scss";
+@import "./page/home.scss";
+@import "./page/Dashboard.scss";
