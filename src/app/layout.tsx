@@ -8,7 +8,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import theme from "@@/assets/theme";
-// css
+// css import
 import "@@/assets/css/main.scss";
 
 export const metadata: Metadata = {
